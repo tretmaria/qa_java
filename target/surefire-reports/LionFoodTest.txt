@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: LionFoodTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.051 sec <<< FAILURE!
-unnecessary Mockito stubbings(LionFoodTest)  Time elapsed: 0.048 sec  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.077 sec <<< FAILURE!
+unnecessary Mockito stubbings(LionFoodTest)  Time elapsed: 0.077 sec  <<< ERROR!
 org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected in test class: LionFoodTest
 Clean & maintainable test code requires zero unnecessary code.

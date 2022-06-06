@@ -11,12 +11,12 @@ public class Lion {
         if ("Самец".equals(sex)) {
             hasMane = true;
             hasKittens = false;
-            this.feline.getKittens(0);
+            feline.getKittens(0);
 
         } else if ("Самка".equals(sex)) {
             hasMane = false;
             hasKittens = true;
-            this.feline.getKittens(1);
+            feline.getKittens(1);
         } else {
             throw new Exception("Используйте допустимые значения пола животного - самей или самка");
         }

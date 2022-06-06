@@ -1,5 +1,6 @@
-import com.example.Feline;
-import com.example.Lion;
+//import com.example.Feline;
+//import com.example.Lion;
+package com.example;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -14,11 +15,12 @@ import static org.junit.Assert.assertEquals;
 @RunWith(MockitoJUnitRunner.class)
 public class LionFoodTest {
     @Mock
-    Feline feline;
+    private Feline feline;
     @Test
     public void getLionTypeOfFoodTest() throws Exception {
         Lion lion = new Lion("Самец", feline);
-        Mockito.when(feline.eatMeat()).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
+        //Mockito.when(feline.eatMeat()).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
+        Mockito.when(feline.getFood("Хищник")).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
         List<String> expectedLionTypeOfFood = Arrays.asList("Животные", "Птицы", "Рыба");
         List<String> actualLionTypeOfFood = lion.getFood();
         assertEquals(expectedLionTypeOfFood, actualLionTypeOfFood);

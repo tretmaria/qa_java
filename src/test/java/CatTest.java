@@ -1,7 +1,8 @@
-import com.example.Animal;
-import com.example.Cat;
-import com.example.Feline;
-import com.example.Predator;
+//import com.example.Animal;
+//import com.example.Cat;
+//import com.example.Feline;
+//import com.example.Predator;
+package com.example;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -27,26 +28,22 @@ public class CatTest {
     }
 
 //    @Test
-//    public void getTypeOfFoodCatTest() throws Exception {
+//    public void getCatTypeOfFoodTest() throws Exception {
 //        Animal animal = new Animal();
 //        List<String> expectedEatMeat = Arrays.asList("Животные", "Птицы", "Рыба");
-//        List<String> actualTypeOfFood = animal.getFood("Хищник}");
-//        assertEquals(expectedEatMeat, actualTypeOfFood);
+//        List<String> actualTypeOfFood = animal.getFood("Травоядное");
+//        assertNotEquals(expectedEatMeat, actualTypeOfFood);
 //    }
 
     @Mock
     Predator predator;
-    Animal animal;
     @Test
     public void DoesCatEatMeatTest() throws Exception {
         Feline feline = new Feline();
         Cat cat = new Cat(feline);
         Mockito.when(predator.eatMeat()).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
-        //List<String> expectedEatMeat = Arrays.asList("Животные", "Птицы", "Рыба");
-        List<String> actualTypeOfFood = cat.getFood();
-        //System.out.println(expectedEatMeat);
-        System.out.println(actualTypeOfFood);
-        //assertEquals(expectedEatMeat, actualTypeOfFood);
-
+        List<String> expectedEatMeat = Arrays.asList("Животные", "Птицы", "Рыба");
+        List<String> actualCatTypeOfFood = cat.getFood();
+        assertEquals(expectedEatMeat, actualCatTypeOfFood);
     }
 }

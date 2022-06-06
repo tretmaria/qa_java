@@ -1,6 +1,8 @@
-import com.example.Animal;
-import com.example.Feline;
-import com.example.Lion;
+//import com.example.Animal;
+//import com.example.Feline;
+//import com.example.Lion;
+package com.example;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,7 +15,6 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class FelineTest {
     private final int expectedNumberOfKittens;
-
     public FelineTest(int expectedNumberOfKittens) {
         this.expectedNumberOfKittens = expectedNumberOfKittens;
     }
@@ -25,7 +26,6 @@ public class FelineTest {
         List<String> actualTypeOfFood = feline.getFood("Хищник");
         assertEquals(expectedToEatMeat, actualTypeOfFood);
     }
-
     @Test
     public void shouldGetFamilyTest() {
         Feline feline = new Feline();
@@ -58,14 +58,13 @@ public class FelineTest {
                 {2},
                 {3},
                 {4},
-                {5},
         };
     }
 
     @Test
     public void ShouldHaveMoreThanOneKittenTest() {
         Feline feline = new Feline();
-        int actualNumberOfKittens = feline.getKittens();
+        int actualNumberOfKittens = feline.getKittens(3);
         Assert.assertEquals(expectedNumberOfKittens, actualNumberOfKittens);
     }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="LionTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="LionTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -67,8 +67,8 @@
   </properties>
   <testcase classname="LionTest" name="haveKittensTest[0]" time="0"/>
   <testcase classname="LionTest" name="shouldSendErrorMessageTest[0]" time="0.001"/>
-  <testcase classname="LionTest" name="doesLionHaveManeTest[0]" time="0"/>
+  <testcase classname="LionTest" name="doesLionHaveManeTest[0]" time="0.002"/>
   <testcase classname="LionTest" name="haveKittensTest[1]" time="0"/>
   <testcase classname="LionTest" name="shouldSendErrorMessageTest[1]" time="0"/>
-  <testcase classname="LionTest" name="doesLionHaveManeTest[1]" time="0"/>
+  <testcase classname="LionTest" name="doesLionHaveManeTest[1]" time="0.001"/>
 </testsuite>

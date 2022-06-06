@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: CatTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.82 sec <<< FAILURE!
-unnecessary Mockito stubbings(CatTest)  Time elapsed: 0.02 sec  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.983 sec <<< FAILURE!
+unnecessary Mockito stubbings(CatTest)  Time elapsed: 0.032 sec  <<< ERROR!
 org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected in test class: CatTest
 Clean & maintainable test code requires zero unnecessary code.
