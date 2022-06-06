@@ -3,6 +3,7 @@
 //import com.example.Feline;
 //import com.example.Predator;
 package com.example;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -13,7 +14,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
@@ -26,15 +26,6 @@ public class CatTest {
         String actualSound = cat.getSound();
         assertEquals(expectedSound, actualSound);
     }
-
-//    @Test
-//    public void getCatTypeOfFoodTest() throws Exception {
-//        Animal animal = new Animal();
-//        List<String> expectedEatMeat = Arrays.asList("Животные", "Птицы", "Рыба");
-//        List<String> actualTypeOfFood = animal.getFood("Травоядное");
-//        assertNotEquals(expectedEatMeat, actualTypeOfFood);
-//    }
-
     @Mock
     Predator predator;
     @Test

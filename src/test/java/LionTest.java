@@ -2,7 +2,6 @@
 //import com.example.Lion;
 package com.example;
 
-import net.bytebuddy.build.Plugin;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
