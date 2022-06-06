@@ -1,4 +1,6 @@
+import com.example.Animal;
 import com.example.Feline;
+import com.example.Lion;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,6 +32,16 @@ public class FelineTest {
         String expectedFamilyGroup = "Кошачьи";
         String actualFamilyGroup = feline.getFamily();
         assertEquals(expectedFamilyGroup, actualFamilyGroup);
+    }
+
+    @Test
+    public void getErrorMessageTest() throws Exception {
+        try {
+            Animal animal = new Animal();
+            animal.getFood(" ");
+        } catch (Exception exception) {
+            System.out.println("Неизвестный вид животного, используйте значение Травоядное или Хищник");
+        }
     }
 
     @Test
