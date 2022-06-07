@@ -1,5 +1,3 @@
-//import com.example.Animal;
-//import com.example.Feline;
 package com.example;
 import org.junit.Test;
 

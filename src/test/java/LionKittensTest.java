@@ -1,5 +1,3 @@
-//import com.example.Feline;
-//import com.example.Lion;
 package com.example;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,13 +6,12 @@ import org.junit.runners.Parameterized;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-
-public class LionKittensParameterizedTest {
+public class LionKittensTest {
     Feline feline = new Feline();
     private final String sex;
     private final int expectedNumberOfLionKittens;
 
-    public LionKittensParameterizedTest(String sex, int expectedNumberOfLionKittens) {
+    public LionKittensTest(String sex, int expectedNumberOfLionKittens) {
         this.sex = sex;
         this.expectedNumberOfLionKittens = expectedNumberOfLionKittens;
     }

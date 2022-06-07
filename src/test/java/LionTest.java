@@ -1,5 +1,3 @@
-//import com.example.Feline;
-//import com.example.Lion;
 package com.example;
 
 import org.junit.Test;
@@ -9,7 +7,6 @@ import org.junit.runners.Parameterized;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-
 public class LionTest {
     Feline feline = new Feline();
     private final String sex;
@@ -20,7 +17,7 @@ public class LionTest {
     }
 
     @Parameterized.Parameters
-    public static Object[][] getGender() {
+    public static Object[][] hasMane() {
         return new Object[][]{
                 {"Самец", true},
                 {"Самка", false},

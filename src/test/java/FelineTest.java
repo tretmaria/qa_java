@@ -1,6 +1,3 @@
-//import com.example.Animal;
-//import com.example.Feline;
-//import com.example.Lion;
 package com.example;
 
 import org.junit.Assert;
@@ -16,6 +13,7 @@ import static org.junit.Assert.assertEquals;
 public class FelineTest {
     private final int expectedNumberOfKittens;
     public FelineTest(int expectedNumberOfKittens) {
+
         this.expectedNumberOfKittens = expectedNumberOfKittens;
     }
 
@@ -45,7 +43,7 @@ public class FelineTest {
     }
 
     @Test
-    public void shouldHaveOneKittenTest (){
+    public void shouldHaveOneKitten(){
         Feline feline = new Feline();
         int expectedToHaveOneKitten = 1;
         int actualNumberOfKittens = feline.getKittens();
@@ -62,7 +60,7 @@ public class FelineTest {
     }
 
     @Test
-    public void ShouldHaveMoreThanOneKittenTest() {
+    public void shouldHaveMoreThanOneKitten() {
         Feline feline = new Feline();
         int actualNumberOfKittens = feline.getKittens(3);
         Assert.assertEquals(expectedNumberOfKittens, actualNumberOfKittens);

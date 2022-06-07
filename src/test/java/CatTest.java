@@ -1,7 +1,3 @@
-//import com.example.Animal;
-//import com.example.Cat;
-//import com.example.Feline;
-//import com.example.Predator;
 package com.example;
 
 import org.junit.Test;
@@ -29,7 +25,7 @@ public class CatTest {
     @Mock
     Predator predator;
     @Test
-    public void DoesCatEatMeatTest() throws Exception {
+    public void doesCatEatMeatTest() throws Exception {
         Feline feline = new Feline();
         Cat cat = new Cat(feline);
         Mockito.when(predator.eatMeat()).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
