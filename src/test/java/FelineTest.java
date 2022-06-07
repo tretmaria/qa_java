@@ -21,7 +21,7 @@ public class FelineTest {
     public void shouldEatMeatTest() throws Exception {
         Feline feline = new Feline();
         List<String> expectedToEatMeat = List.of("Животные", "Птицы", "Рыба");
-        List<String> actualTypeOfFood = feline.getFood("Хищник");
+        List<String> actualTypeOfFood = feline.eatMeat();
         assertEquals(expectedToEatMeat, actualTypeOfFood);
     }
     @Test
@@ -53,9 +53,7 @@ public class FelineTest {
     @Parameterized.Parameters
     public static Object[][] getDataForKittens() {
         return new Object[][] {
-                {2},
                 {3},
-                {4},
         };
     }
 

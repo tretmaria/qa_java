@@ -6,6 +6,10 @@ public class Cat {
 
     Predator predator;
 
+    public Cat(Predator predator) {
+        this.predator = predator;
+    }
+
     public Cat(Feline feline) {
         this.predator = feline;
     }

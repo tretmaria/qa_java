@@ -4,6 +4,11 @@ import java.util.List;
 
 public class Feline extends Animal implements Predator {
 
+//    Animal animal;
+//    public Feline (Animal animal){
+//        this.animal = animal;
+//    }
+
     @Override
     public List<String> eatMeat() throws Exception {
         return getFood("Хищник");
