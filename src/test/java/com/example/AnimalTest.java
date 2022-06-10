@@ -8,6 +8,12 @@ import static org.junit.Assert.assertEquals;
 import java.lang.Exception;
 
 public class AnimalTest {
+    @Test(expected = Exception.class)
+    public void showErrorMessageTest() throws Exception {
+        Animal animal = new Animal();
+        animal.getFood(" ");
+        System.out.println("Неизвестный вид животного, используйте значение Травоядное или Хищник");
+    }
 
     @Test
     public void getAnimalTypeOfFoodTest() throws Exception {
@@ -20,13 +26,10 @@ public class AnimalTest {
     @Test
     public void animalTypeOfFoodTest() throws Exception {
         Animal animal = new Animal();
-        String animalKind = "Хищник";
         List<String> expectedTypeOfFood = List.of("Животные", "Птицы", "Рыба");
-        List<String> actualTypeOfFood = animal.getFood(animalKind);
+        List<String> actualTypeOfFood = animal.getFood("Хищник");
         assertEquals(expectedTypeOfFood, actualTypeOfFood);
     }
-
-
     @Test
     public void getFamilyMessageTest(){
         Animal animal = new Animal();
@@ -34,4 +37,5 @@ public class AnimalTest {
         String actualMessage = animal.getFamily();
         assertEquals(expectedMessage, actualMessage);
     }
+
 }

@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 @RunWith(Parameterized.class)
 public class LionTest {
@@ -30,5 +31,11 @@ public class LionTest {
         assertEquals(expectedToHaveMane, lion.doesHaveMane());
     }
 
-
+    @Test(expected = Exception.class)
+    public void errorMessageTest() throws Exception {
+        Feline feline = new Feline();
+        Lion lion = new Lion(" ", feline);
+        lion.doesHaveMane();
+        System.out.println("Используйте допустимые значения пола животного - самец или самка");
+    }
 }
