@@ -1,4 +1,5 @@
 package com.example;
+
 import org.junit.Test;
 
 import java.util.List;
@@ -16,15 +17,6 @@ public class AnimalTest {
         assertEquals(expectedTypeOfFood, actualTypeOfFood);
     }
 
-    @Test
-    public void showErrorMessageTest() throws Exception {
-        try {
-            Animal animal = new Animal();
-            animal.getFood(" ");
-        } catch (Exception exception) {
-            System.out.println("Неизвестный вид животного, используйте значение Травоядное или Хищник");
-        }
-    }
 
     @Test
     public void getFamilyMessageTest(){

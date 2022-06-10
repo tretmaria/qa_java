@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.example.FelineTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="com.example.FelineTest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,9 +65,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.example.FelineTest" name="shouldGetFamilyTest[0]" time="0.001"/>
-  <testcase classname="com.example.FelineTest" name="shouldHaveOneKitten[0]" time="0"/>
-  <testcase classname="com.example.FelineTest" name="shouldHaveMoreThanOneKitten[0]" time="0"/>
-  <testcase classname="com.example.FelineTest" name="getErrorMessageTest[0]" time="0.002"/>
-  <testcase classname="com.example.FelineTest" name="shouldEatMeatTest[0]" time="0.001"/>
+  <testcase classname="com.example.FelineTest" name="shouldGetFamilyTest" time="0"/>
+  <testcase classname="com.example.FelineTest" name="shouldHaveOneKitten" time="0"/>
+  <testcase classname="com.example.FelineTest" name="shouldEatMeatTest" time="0.001"/>
 </testsuite>

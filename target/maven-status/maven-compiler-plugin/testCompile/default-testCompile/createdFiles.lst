@@ -1,7 +1,8 @@
 com/example/FelineTest.class
 com/example/LionFoodTest.class
 com/example/CatTest.class
-com/example/LionKittensTest.class
+com/example/LionMockTest.class
 com/example/LionTest.class
 com/example/AnimalTest.class
-LionMockTest.class
+com/example/FelineKittensTest.class
+com/example/ErrorMessage.class
