@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import java.lang.Exception;
 
 public class AnimalTest {
 
@@ -13,6 +14,14 @@ public class AnimalTest {
         Animal animal = new Animal();
         String animalKind = "Травоядное";
         List<String> expectedTypeOfFood = List.of("Трава", "Различные растения");
+        List<String> actualTypeOfFood = animal.getFood(animalKind);
+        assertEquals(expectedTypeOfFood, actualTypeOfFood);
+    }
+    @Test
+    public void animalTypeOfFoodTest() throws Exception {
+        Animal animal = new Animal();
+        String animalKind = "Хищник";
+        List<String> expectedTypeOfFood = List.of("Животные", "Птицы", "Рыба");
         List<String> actualTypeOfFood = animal.getFood(animalKind);
         assertEquals(expectedTypeOfFood, actualTypeOfFood);
     }
@@ -25,5 +34,4 @@ public class AnimalTest {
         String actualMessage = animal.getFamily();
         assertEquals(expectedMessage, actualMessage);
     }
-
 }
