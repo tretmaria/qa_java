@@ -1,12 +1,12 @@
 # qa_java
 QA Java Project
 
-Описание: 
-Тебя пригласили помочь зоологам: они исследуют семейство кошачьих. Чтобы записывать наблюдения, учёные используют специальную программу. Тебе предстоит протестировать часть программы.
+Description: 
+You have been invited to help zoologists: they are researching the feline family. To record their observations, the scientists use a special program. It is up to you to test a part of the program.
 
-Чтобы увеличить покрытие, нужно вызвать каждый метод каждого класса в отдельном тесте. Для каждой ветки условия напиши отдельный тест. Некоторым веткам понадобится параметризованный тест или моки.
+To increase the coverage, you must call each method of each class in a separate test. Write a separate test for each branch of the condition. Some branches will need a parameterized test or mocks.
 
-Инструкции:
-Изолировать класс Lion от класса Feline.
-Написать тесты на классы Feline, Cat и Lion.
-Оценить покрытие с помощью Jacoco: оно должно быть 100%.
+Instructions: 
+Isolate the Lion class from the Feline class. 
+Write tests for the Feline, Cat, and Lion classes. 
+Evaluate coverage with Jacoco: it should be 100%.
